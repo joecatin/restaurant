@@ -1,6 +1,8 @@
 import { load } from './helpers.js';
 import './style.css'
 
+document.title = "restaurant";
+
 const main = document.createElement('div');
 main.id = 'main-container';
 document.body.appendChild(main);
