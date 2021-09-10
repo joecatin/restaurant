@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Countryside';
+    src: url('../fonts/Countryside.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoRegular.ttf') format('truetype');
+}
+
+#day-item-container {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#item-day {
+    margin: 0;
+    font-family: 'Countryside';
+    font-size: medium;
+    font-weight: bold;
+}
+
+#item-hours {
+    margin: 0;
+    font-family: 'RobotoRegular';
+    font-size: medium;
+    display: flex;
+}
