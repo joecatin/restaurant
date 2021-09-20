@@ -3,8 +3,15 @@ import './style.css'
 
 export function component() {
 
-    const sailorIcon = new Image();
-    sailorIcon.src = sailor;
+    const icon = new Image();
+    icon.src = sailor;
 
-    return sailorIcon;
+    const show = () => { return icon }
+    const update = (src) => {
+        const icon = new Image();
+        icon.src = src;
+        return icon
+    }
+
+    return { show, update };
 }

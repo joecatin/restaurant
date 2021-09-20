@@ -14,5 +14,5 @@ const content = document.createElement('div');
 content.id = 'content-container';
 main.appendChild(content);
 
-load("nav").then(component => nav.appendChild(component()));
-load("cover").then(component => content.appendChild(component()));
+load("nav").then(component => nav.appendChild(component().show()));
+load("cover").then(component => content.appendChild(component().show()));
