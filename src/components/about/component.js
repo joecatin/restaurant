@@ -26,16 +26,16 @@ export function component() {
     about.appendChild(address);
 
 
-    const addDay = (day, lunch, diner) => {
+    const addDay = ({ day, lunch, diner }) => {
         clear(hoursContainer);
-        days.push({ "day": day, "lunch": lunch, "diner": diner })
+        days.push({ day, lunch, diner });
         displayDays(days);
         return about;
     };
-    const updateDay = (day, lunch, diner) => {
+    const updateDay = ({ day, lunch, diner }) => {
         clear(hoursContainer);
         const index = days.findIndex(object => object.day == day);
-        days[index] = { "day": day, "lunch": lunch, "diner": diner };
+        days[index] = { day, lunch, diner };
         displayDays(days);
         return about;
     };
