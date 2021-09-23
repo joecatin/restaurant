@@ -8,7 +8,8 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Development',
+      title: 'seafood restaurant',
+      favicon: "./src/anchor.png"
     }),
   ],
   output: {
