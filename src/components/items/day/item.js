@@ -1,7 +1,6 @@
 import './style.css'
 
-export function item(day = "", lunch = "", diner = "") {
-
+const item = (day = "", lunch = "", diner = "") => {
     const item = document.createElement('div');
     item.id = 'day-item-container';
 
@@ -17,3 +16,5 @@ export function item(day = "", lunch = "", diner = "") {
 
     return item;
 }
+
+export { item };

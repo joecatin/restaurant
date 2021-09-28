@@ -1,6 +1,6 @@
 import './style.css'
 
-export function item(icon = "", name = "", description = "", price = 0) {
+const item = (icon = "", name = "", description = "", price = 0) => {
 
     const item = document.createElement('div');
     item.id = 'menu-item-container';
@@ -26,3 +26,5 @@ export function item(icon = "", name = "", description = "", price = 0) {
 
     return item;
 }
+
+export { item };

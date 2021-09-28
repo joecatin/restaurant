@@ -13,7 +13,7 @@ const displayItems = (items) => {
     return menu;
  }
 
-export async function component(type = "") {
+const component = async (type = "") => {
 
     menu.id = 'menu-container';
     
@@ -39,3 +39,4 @@ export async function component(type = "") {
     return { show, addItem, updateItem, deleteItem };
 }
 
+export { component };

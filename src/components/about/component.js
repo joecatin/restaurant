@@ -15,8 +15,7 @@ const displayDays = (days) => {
     return hoursContainer;
 }
 
-export function component() {
-
+const component = () => {
     about.id = 'about-container';
     hoursContainer.id = 'hours-container';
     about.appendChild(hoursContainer);
@@ -52,3 +51,5 @@ export function component() {
     
     return { show, addDay, updateDay, deleteDay };
 }
+
+export { component };

@@ -4,9 +4,7 @@ import drinks from './img/wine-colour.png';
 import about from './img/lighthouse-colour.png';
 import './style.css'
 
-
-
-export function component() {
+const component = () => {
 
     const nav = createDOMObject('div', 'component-container');
     const content = document.getElementById('content-container');
@@ -36,3 +34,5 @@ export function component() {
     
     return { show };
 }
+
+export { component };

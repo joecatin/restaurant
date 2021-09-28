@@ -1,8 +1,7 @@
 import sailor from './sailor-colour.png';
 import './style.css'
 
-export function component() {
-
+const component = () => {
     const icon = new Image();
     icon.src = sailor;
 
@@ -15,3 +14,4 @@ export function component() {
 
     return { show, update };
 }
+export { component };
